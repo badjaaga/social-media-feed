@@ -1,0 +1,21 @@
+.post-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: rgb(233, 236, 239) 0.2rem solid;
+    border-radius: 2rem;
+}
+
+.post-form-wrapper > * {
+    display: block;
+    padding: 0.5rem;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+

@@ -6,7 +6,9 @@ import {
     Redirect,
 } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import {Typography} from "@material-ui/core";
+
+import {PostsList} from "./components/PostsList";
+import {AddPostForm} from "./components/AddPostForm/AddPostForm";
 
 
 function App() {
@@ -19,9 +21,10 @@ function App() {
                       exact
                       path="/"
                       render={() => (
-                          <section>
-                              <Typography variant='h5' align='center'>Welcome to the Redux Essentials example app!</Typography>
-                          </section>
+                          <React.Fragment>
+                              <AddPostForm />
+                              <PostsList/>
+                          </React.Fragment>
                       )}
                   />
                   <Redirect to="/" />

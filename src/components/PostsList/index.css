@@ -1,0 +1,8 @@
+.post-except {
+    padding: 3rem;
+    border: rgb(233, 236, 239) 0.2rem solid;
+    border-radius: 3rem;
+}
+.posts-list {
+    padding: 3rem;
+}
