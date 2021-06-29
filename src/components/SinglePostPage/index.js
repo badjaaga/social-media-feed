@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import {Typography} from "@material-ui/core";
 
 export const SinglePostPage = ({ match }) => {
     const { postId } = match.params
@@ -11,7 +12,7 @@ export const SinglePostPage = ({ match }) => {
     if (!post) {
         return (
             <section>
-                <h2>Post not found!</h2>
+                <Typography variant="h3">Post not found!</Typography>
             </section>
         )
     }
@@ -19,8 +20,8 @@ export const SinglePostPage = ({ match }) => {
     return (
         <section>
             <article className="post">
-                <h2>{post.title}</h2>
-                <p className="post-content">{post.content}</p>
+                <Typography variant="h5">{post.title}</Typography>
+                <Typography variant="body2" className="post-content">{post.content}</Typography>
             </article>
         </section>
     )
